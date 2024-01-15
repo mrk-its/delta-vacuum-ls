@@ -1,0 +1,20 @@
+[project]
+name = "delta-vacuum-ls"
+version = "0.0.1"
+authors = [
+    {name="Mariusz Kryński", email="mrk@sed.pl"}
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "deltalake",
+    "more-itertools",
+]
+
+[project.scripts]  # Optional
+delta-vacuum-ls = "delta_vacuum_ls:main"
+
+[project.optional-dependencies]
+dev = [
+    "black"
+]
